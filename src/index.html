@@ -1,0 +1,116 @@
+---
+title: "The Galaxy's Most Default-est New Tab Experience"
+layout: "base.11ty.js"
+---
+
+<img
+  id="hero-image"
+  src="assets/shot.jpg"
+  alt="Screenshot of the new tab extension"
+/>
+
+<div class="feature-group">
+  <div class="feature">
+    <h2 id="feat-date">
+      The date.
+      <svg
+        id="left-arrow"
+        version="1.1"
+        viewBox="0 0 210 297"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          id="arrow"
+          d="m22.413 212.74s0.46308-1.6568 2.7275-5.5789c1.8123-3.139 3.8907-6.1417 6.2175-8.9208 1.9634-2.345 4.24-4.414 6.4879-6.4879 1.9419-1.7916 6.0373-5.1362 6.0373-5.1362l6.2175-4.6857 9.2812-6.578s6.2175-4.4154 11.714 1.9824 8.5604 13.697 8.5604 13.697l7.4791 13.787s5.3164 9.4615 5.0461 10.993"
+        />
+        <path
+          id="line"
+          d="m196.94 211.4s-1.9428 66.314-77.274 65.233c-75.331-1.0813-60.914-69.384-60.914-69.384"
+        />
+      </svg>
+    </h2>
+  </div>
+  <div class="feature">
+    <h2 id="feat-theme">
+      Theme settings.
+      <svg
+        id="right-arrow"
+        version="1.1"
+        viewBox="0 0 210 297"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          id="r-arrow"
+          d="m171.98 117.74 14.552-38.365s3.9688-14.552 9.2604 0c5.2917 14.552 13.229 31.75 13.229 31.75"
+        />
+        <path
+          id="r-line"
+          d="m52.917 269.88s74.083 42.333 121.71 15.875c47.625-26.458 15.875-185.21 15.875-185.21"
+        />
+      </svg>
+    </h2>
+  </div>
+</div>
+
+<h2>Just that simple.</h2>
+
+<div class="link-group">
+  <h3>Get it here:</h3>
+  <a
+    href="https://chrome.google.com/webstore/detail/caoilpjeooedgllghmfehpjmjonmpamd"
+    ><img src="assets/chrome.png" class="browser-logos" id="chrome"
+  /></a>
+  <a
+    href="https://addons.mozilla.org/firefox/addon/the-most-default-new-tab-home/"
+    ><img src="assets/firefox.png" class="browser-logos" id="firefox"
+  /></a>
+  <a
+    href="https://microsoftedge.microsoft.com/addons/detail/the-galaxys-most-default/efhilopeclkdidfikknpcpffdfleopin"
+    ><img src="assets/edge.png" class="browser-logos" id="edge"
+  /></a>
+</div>
+
+<script>
+  document.getElementById("feat-date").addEventListener(
+    "mouseover",
+    function (e) {
+      e.target.style.color = "orange";
+      // const svg = document.createElement("img")
+      // svg.setAttribute("src", "assets/drawingo.svg")
+      // svg.setAttribute("id", "left-arrow")
+      // e.target.appendChild(svg)
+      const svg = document.getElementById("left-arrow");
+      svg.style.display = "initial";
+    },
+    false
+  );
+  document.getElementById("feat-date").addEventListener(
+    "mouseout",
+    function (e) {
+      e.target.removeAttribute("style");
+      // const svg = document.getElementById("left-arrow")
+      // svg.remove();
+      const svg = document.getElementById("left-arrow");
+      svg.style.display = "none";
+    },
+    false
+  );
+  document.getElementById("feat-theme").addEventListener(
+    "mouseover",
+    function (e) {
+      e.target.style.color = "blue";
+      const svg = document.getElementById("right-arrow");
+      svg.style.display = "initial";
+    },
+    false
+  );
+  document.getElementById("feat-theme").addEventListener(
+    "mouseout",
+    function (e) {
+      e.target.removeAttribute("style");
+      const svg = document.getElementById("right-arrow");
+      svg.style.display = "none";
+    },
+    false
+  );
+</script>
