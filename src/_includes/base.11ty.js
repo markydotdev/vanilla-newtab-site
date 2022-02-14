@@ -13,7 +13,7 @@ module.exports = async (data) => `<!doctype html>
         .readFile(path.resolve(__dirname, "./style.css"))
         .then((data) => new CleanCSS().minify(data).styles)}
     </style>
-    <script async defer data-website-id="078dd6b0-7c5f-4ad8-acd7-5a9e71886435" src="https://umame.one/umami.js"></script>  </head>
+  </head>
   <body>
     <main>
         <h1>${data.title}</h1>
