@@ -7,9 +7,14 @@
     "dev": "npx @11ty/eleventy --serve"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^1.0.0"
   },
   "dependencies": {
-    "clean-css": "^5.1.5"
+    "clean-css": "^5.2.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "engine.io@<4.0.0": ">=4.0.0"
+    }
   }
 }
