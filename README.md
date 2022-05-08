@@ -2,6 +2,7 @@
 
 This project is the landing page for an ultra-minimalist extension/plugin for modern browsers. 
 
+Reference image of the new tab extension:
 ![shot](https://user-images.githubusercontent.com/99497246/167277240-588aa79a-1a70-4f07-af63-244bd98444b3.png)
 
 ## Current Features
